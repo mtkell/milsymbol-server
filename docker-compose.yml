@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  milsymbol:
+    image: mtkell/milsymbol-server
+    container_name: milsymbol
+    restart: unless-stopped
+    ports:
+      - 2525:2525
+    
